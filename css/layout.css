@@ -1,0 +1,265 @@
+body,ul,header,h1,p,img {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Tahoma,Arial,Verdana,"microsoft yahei";
+	background-color: #ecf0f1;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+}
+
+/* header*/
+header {
+	width: 100%;
+	height: 50px;
+	background-color: #2C3E50;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+header nav {
+	width: 960px;
+	height: 50px;
+	margin: 0 auto;
+}
+header nav li {
+	margin: 15px 20px 0 0;
+}
+header nav li a{
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 20px;
+	padding-bottom: 12px;
+}
+header nav li a:hover {
+	border-bottom: #ffffff 2px solid;
+}
+
+.animated {
+	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	-o-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-4em)
+	}
+	100% {
+		-webkit-transform: translateY(0)
+	}
+}
+@-moz-keyframes slideDown {
+	0% {
+		-moz-transform: translateY(-4em)
+	}
+	100% {
+		-moz-transform: translateY(0)
+	}
+}
+@-o-keyframes slideDown {
+	0% {
+		-o-transform: translateY(-4em)
+	}
+	100% {
+		-o-transform: translateY(0)
+	}
+}
+@keyframes slideDown {
+	0% {
+		transform: translateY(-4em)
+	}
+	100% {
+		transform: translateY(0)
+	}
+}
+.animated.slideDown {
+	-webkit-animation-name: slideDown;
+	-moz-animation-name: slideDown;
+	-o-animation-name: slideDown;
+	animation-name: slideDown
+}
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(0)
+	}
+	100% {
+		-webkit-transform: translateY(-4em)
+	}
+}
+@-moz-keyframes slideUp {
+	0% {
+		-moz-transform: translateY(0)
+	}
+	100% {
+		-moz-transform: translateY(-4em)
+	}
+}
+@-o-keyframes slideUp {
+	0% {
+		-o-transform: translateY(0)
+	}
+	100% {
+		-o-transform: translateY(-4em)
+	}
+}
+@keyframes slideUp {
+	0% {
+		transform: translateY(0)
+	}
+	100% {
+		transform: translateY(-4em)
+	}
+}
+.animated.slideUp {
+	-webkit-animation-name: slideUp;
+	-moz-animation-name: slideUp;
+	-o-animation-name: slideUp;
+	animation-name: slideUp
+}
+
+
+/*jumbotron*/
+.jumbotron {
+	width: 100%;
+	padding: 50px 0;
+	height: 300px;
+	background-color: #ECF0F1;
+	background: url(../img/jumbotron.jpg);
+	background-size: 100% 100%;
+	margin-top: 50px;
+	border-bottom: #000000 1px solid;
+}
+.jumbotron div {
+	width: 800px;
+	height: 300px;
+	padding-top: 20px;
+	color: #ffffff;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+.jumbotron div h1 {
+	color: #000000;
+	margin: 30px auto;
+}
+.jumbotron div p {
+	margin: 20px 100px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #000000;
+	text-align: left;
+}
+.jumbotron a {
+	font-weight: bold;
+	display: block;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	margin: 40px auto;
+	border: #ffffff 3px solid;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: rgba(0,0,0,0.2);
+}
+
+p.qidai {
+	text-align: center;
+	font-family: "agency fb";
+	font-size: 50px;
+	height: 100px;
+	line-height: 100px;
+	color: #bdc3c7;
+}
+
+/*container*/
+.container {
+	width: 960px;
+	height: 420px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: #bdc3c7;
+	-moz-box-shadow:0px 2px 10px #999 inset;
+    -webkit-box-shadow:0px 2px 10px #999 inset;
+    box-shadow:0px 2px 10px #999 inset; 
+    border-radius: 2px;
+}
+.unit {
+	width: 280px;
+	height: 330px;
+	background-color: #ecf0f1;
+	float: left;
+	margin: 30px 0 0 30px;
+	border-radius: 0 0 5px 30px;
+	text-align: center;
+}
+.unit a {
+	display: block;
+	width: 280px;
+	height: 220px;
+}
+.unit a img{
+	width: 280px;
+	height: 220px;
+	display: block;
+}
+.unit a p{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0,0,0,0.4);
+	position: relative;
+	top:-50px;
+	line-height: 50px;
+	color: #ffffff;
+	font-size: 18px;
+}
+.unit a+a {
+	display: inline;
+	color: #000000;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+}
+.unit a span {
+	color: #bdc3c7;
+	font-size: 12px;
+}
+.unit div {
+	height: 50px;
+	line-height: 50px;
+}
+.unit div+img{
+	width: 52px;
+	height: 60px;
+	position: relative;
+	right: -110px;
+	top: -35px;
+}
+
+/*footer*/
+footer {
+	width: 100%;
+	/*height: 300px;*/
+	margin: 100px 0 5px 0;
+	/*background: url(../img/foooter.png);*/
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 10px;
+}
+footer a {
+	color: #000000;
+}

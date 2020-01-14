@@ -1,0 +1,16 @@
+body {
+				padding-top: 80px;
+				padding-bottom: 20px;
+			}
+			.typo img {
+				display: block;
+				margin: 10px auto;
+				width: 400px;
+				height: 400px;
+			}
+			.jiathis_style,.jiathis_style div {
+				box-sizing: content-box;
+			}
+			.jiathis_button_expanded {
+				box-sizing: content-box;
+			}

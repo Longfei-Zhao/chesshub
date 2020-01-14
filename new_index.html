@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="国际象棋,国象,国象圈" />
+		<meta name="description" content="做中国最专业的国象棋评网站" />
+		<title>国象圈</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/typo.css"/>
+		<style type="text/css">
+			body {
+			  padding-top: 50px;
+			  padding-bottom: 20px;
+			}
+		</style>
+                
+                <script>
+                var _hmt = _hmt || [];
+                (function() {
+                  var hm = document.createElement("script");
+                  hm.src = "//hm.baidu.com/hm.js?8914f22892cc01cbaccb4ed68bbfb557";
+                  var s = document.getElementsByTagName("script")[0]; 
+                  s.parentNode.insertBefore(hm, s);
+                })();
+                </script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">国象圈-beta</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">棋评</a>
+						</li>
+						<li><a href="about.html">关于</a>
+						</li>
+					</ul>
+					<button type="button" class="btn btn-success navbar-btn navbar-right" data-toggle="modal" data-target="#signin">注册</button>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" data-toggle="modal" data-target="#login">登陆</a>
+						</li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+		<!-- Modal -->
+		<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">注册</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form class="form-horizontal">
+		          <div class="form-group">
+		            <label for="recipient-name" class="col-sm-2 control-label">用户名</label>
+		            <div class="col-sm-10">
+		            	<input type="text" class="form-control" id="recipient-name">
+		            </div>
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="col-sm-2 control-label">密码</label>
+		            <div class="col-sm-10">
+		            	<input type="password" class="form-control" id="recipient-password">
+            	 	</div>
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="col-sm-2 control-label">确认密码</label>
+		            <div class="col-sm-10">
+		            	<input type="password" class="form-control" id="recipient-confirmpassword">
+            		</div>
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="col-sm-2 control-label">邀请码</label>
+		            <div class="col-sm-10">
+		            	<input type="text" class="form-control" id="recipient-invitation">
+		            </div>
+		          </div>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		        <button type="button" class="btn btn-primary">确定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">登陆</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form class="form-horizontal">
+		          <div class="form-group">
+		            <label for="recipient-name" class="col-sm-2 control-label">用户名</label>
+		            <div class="col-sm-10">
+		            	<input type="text" class="form-control" id="recipient-name">
+		            </div>
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="col-sm-2 control-label">密码</label>
+		            <div class="col-sm-10">
+		            	<input type="password" class="form-control" id="recipient-password">
+		            </div>
+		          </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		        <button type="button" class="btn btn-primary">确定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>国象圈</h1>
+				<p>送给所有国象人的礼物！希望能给大家搭建一个学习交流的平台。
+					<br />对这里有什么批评、建议或者想交流国象的朋友请加QQ群：369181093
+					<br/>投稿请发送到邮箱：longfei@monkv.com</p>
+				<p><a class="btn btn-success btn-lg" href="#" role="button" disabled="disabled">更多内容，敬请期待 &raquo;</a>
+				</p>
+			</div>
+		</div>
+		<div class="container typo">
+			<div class="list-group">
+				<a href="6.html" class="list-group-item">
+					<h4 class="list-group-item-heading">余瑞源棋评</h4>
+					<p class="list-group-item-text">匿名[2384] - Yu Ruiyuan<br/>世界学校团体锦标赛<br />2006.05</p>
+				</a>
+				<a href="5.html" class="list-group-item">
+					<h4 class="list-group-item-heading">马群棋评</h4>
+					<p class="list-group-item-text">Ma Qun  - Rasulov,Vu<br/>世界少年分龄赛<br />2008.10.28</p>
+				</a>
+				<a href="4.html" class="list-group-item">
+					<h4 class="list-group-item-heading">万云国棋评</h4>
+					<p class="list-group-item-text">Wan Yunguo (2487) - Jobava,Baadur (2711) [C10]</p>
+				</a>
+				<a href="3.html" class="list-group-item">
+					<h4 class="list-group-item-heading">李弘棋评</h4>
+					<p class="list-group-item-text">李弘 - 王昊 [古印度防御-杰米士开局]</p>
+				</a>
+				<a href="1.html" class="list-group-item">
+					<h4 class="list-group-item-heading">修德顺棋评</h4>
+					<p class="list-group-item-text">Le Quang Liam (2703) - Xiu Deshun (2585) [B36]
+						<br/>亚洲个人赛<br />2012.05.05</p>
+				</a>
+				<a href="2.html" class="list-group-item">
+					<h4 class="list-group-item-heading">胡泽华棋评</h4>
+					<p class="list-group-item-text">胡泽华 - 王一</p>
+				</a>
+			</div>
+			<footer>
+				<hr>
+				<p>© Copright 2015 萌趣圈点&nbsp;- 版权所有</p>
+			</footer>
+
+		</div>
+		<!-- /.container -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>
